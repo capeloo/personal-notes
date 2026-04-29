@@ -12,9 +12,11 @@ Step-by-step installation
 Tests
 
 - trivy in PATH system
-![[print-01.png]]
+
+![print 01](../assets/trivy-evidences/print-01.png)
 
 - trivy --version
-![[print-02.png]]
+  
+![print 01](../assets/trivy-evidences/print-02.png)
 
 - 
