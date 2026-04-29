@@ -17,4 +17,5 @@ Tests
 - trivy --version
 ![[print-02.png]]
 
-- 
+- trivy image webgoat/webgoat:latest | less -S 
+![[print-03.png]]
