@@ -12,39 +12,39 @@ Step-by-step installation
 Tests
 - trivy in PATH system
 
-![print 01](../assets/trivy-evidences/print-01.png)
+![print 01](trivy-01.png)
 
 - trivy --version
   
-![print 01](../assets/trivy-evidences/print-02.png)
+![print 01](trivy-02.png)
 
 Scanning container image
 - trivy image webgoat/webgoat:latest | less -S 
 
-![[print-03.png]]
+![[trivy-03.png]]
 
 - trivy image --severity HIGH,CRITICAL webgoat/webgoat:latest | less -S
 
-![[print-04.png]]
+![[trivy-04.png]]
 
 Scanning container image metadata
 - trivy image --image-config-scanners misconfig,secret webgoat/webgoat:latest | less -S
 
-![[print-05.png]]
+![[trivy-05.png]]
 
 Scanning local projects
 - trivy fs C:/Users/"Caio Capêlo"/Repositories/api-ecommerce-tcg-pkm | less -S
 
-![[print-06.png]]
+![[trivy-06.png]]
 
 Scanning git repositories
 - trivy repo C:/Users/"Caio Capêlo"/Repositories/api-ecommerce-tcg-pkm | less -S
 
-![[print-07.png]]
+![[trivy-07.png]]
 
 - trivy repo --scanners vuln,misconfig,secret https://github.com/capeloo/projeto-webapp-taverna.git | less -S
 
-![[print-08.png|643]]
+![[trivy-08.png|643]]
 
 --------------------------------------------------------------------
 
