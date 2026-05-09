@@ -65,4 +65,14 @@ Step-by-step process
 
 ![[gitlab-08.png]]
 
+- Now that we have successfully set up the pipeline, we can create a standard CI/CD workflow including the test, build, push, and deploy stages. After the build stage, we will push the project image to my private repository on Docker Hub. Before doing that, we first need to configure the `.gitlab-ci.yml` file and add the credentials as CI/CD variables. Remember not to hardcode credentials in the pipeline configuration; instead, use GitLab’s variables feature to securely store sensitive information.
+
+![[gitlab-09.png]]
+
+- New .gitlab-ci.yml configuration to implement build stage
+
+![[gitlab-10.png]]
+
+![[gitlab-11.png]]
+
 - 
